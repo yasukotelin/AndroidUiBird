@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidUiBird</string>
+
+    <string name="toolbar_title_home">Home</string>
+</resources>
