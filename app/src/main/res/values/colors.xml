@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="color_primary">@color/bird_blue</color>
+    <color name="color_primary_dark">@color/bird_blue_dark</color>
+    <color name="color_accent">@color/bird_yellow</color>
+
+    <color name="bird_blue">#5890CC</color>
+    <color name="bird_blue_dark">#3e719c</color>
+
+    <color name="bird_yellow">#F8C62D</color>
+
+    <color name="bird_black">#212121</color>
+
+    <color name="bird_gray">#A09B9D</color>
+    <color name="bird_gray2">#575757</color>
 </resources>

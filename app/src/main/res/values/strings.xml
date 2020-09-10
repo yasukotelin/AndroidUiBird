@@ -2,4 +2,7 @@
     <string name="app_name">AndroidUiBird</string>
 
     <string name="toolbar_title_home">Home</string>
+
+    <string name="content_app_name_facebook">facebook</string>
+    <string name="content_title_facebook_search_ui">検索テキストボックスアニメーション</string>
 </resources>
