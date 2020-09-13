@@ -5,6 +5,9 @@
 
     <data>
 
+        <variable
+            name="viewModel"
+            type="com.github.yasukotelin.androiduibird.ui.facebook_search_ui.FacebookSearchInputViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,6 +22,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
             android:elevation="0dp"
+            android:transitionName="end_transition_search_button"
             app:cardBackgroundColor="@color/facebook_gray"
             app:cardCornerRadius="50dp"
             app:layout_constraintEnd_toStartOf="@id/cancel_text"
@@ -46,10 +50,11 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginEnd="12dp"
                     android:background="@null"
-                    android:hint="Facebookを検索"
+                    android:hint="@string/search_in_facebook"
                     android:singleLine="true"
                     android:textCursorDrawable="@drawable/shape_black_cursor"
                     android:textSize="16sp"
+                    android:transitionName="end_transition_search_image_view"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -66,7 +71,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            android:text="キャンセル"
+            android:text="@string/cancel"
+            android:onClick="@{() -> viewModel.onClickCancel()}"
             android:textColor="@color/bird_blue"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@+id/search_input_card_view"

@@ -3,6 +3,10 @@
 
     <string name="toolbar_title_home">Home</string>
 
+    <string name="account_name">アカウント名</string>
+    <string name="cancel">キャンセル</string>
+
     <string name="content_app_name_facebook">facebook</string>
     <string name="content_title_facebook_search_ui">検索テキストボックスアニメーション</string>
+    <string name="search_in_facebook">Facebookを検索</string>
 </resources>

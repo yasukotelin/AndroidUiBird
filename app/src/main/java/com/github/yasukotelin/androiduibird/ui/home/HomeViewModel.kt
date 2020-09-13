@@ -14,7 +14,7 @@ class HomeViewModel : ViewModel(), HomeControllerListener {
                 Content(
                     R.string.content_title_facebook_search_ui,
                     R.string.content_app_name_facebook,
-                    R.drawable.shape_loading_thumbnail,
+                    R.raw.facebook_search_ui_gif,
                     Destination.FacebookSearchUi,
                 )
             )

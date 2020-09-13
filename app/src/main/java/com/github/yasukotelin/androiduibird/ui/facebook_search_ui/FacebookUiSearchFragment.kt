@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import com.github.yasukotelin.androiduibird.databinding.FragmentFacebookUiSearchBinding
 
@@ -36,8 +37,17 @@ class FacebookUiSearchFragment : Fragment() {
     private fun observeFacebookUiSearchViewModel() {
         facebookUiSearchViewModel.run {
             this.navigateSearchInputAction.observe(viewLifecycleOwner, {
+
+                /*
+                SharedElementを指定して画面遷移
+                 */
+                val extras = FragmentNavigatorExtras(
+                    dataBinding.searchButton to "end_transition_search_button",
+                    dataBinding.searchImage to "end_transition_search_image"
+                )
                 findNavController().navigate(
-                    FacebookUiSearchFragmentDirections.actionFacebookUiSearchFragmentToFacebookSearchInputFragment()
+                    FacebookUiSearchFragmentDirections.actionFacebookUiSearchFragmentToFacebookSearchInputFragment(),
+                    extras
                 )
             })
         }
