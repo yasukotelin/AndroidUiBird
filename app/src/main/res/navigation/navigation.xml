@@ -9,5 +9,18 @@
         android:id="@+id/mainFragment"
         android:name="com.github.yasukotelin.androiduibird.ui.home.HomeFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_mainFragment_to_facebookUiSearchFragment"
+            app:destination="@id/facebookUiSearchFragment"
+            app:enterAnim="@anim/nav_slide_fade_enter_anim"
+            app:exitAnim="@anim/nav_slide_fade_exit_anim"
+            app:popEnterAnim="@anim/nav_slide_fade_pop_enter_anim"
+            app:popExitAnim="@anim/nav_slide_fade_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/facebookUiSearchFragment"
+        android:name="com.github.yasukotelin.androiduibird.ui.facebook_search_ui.FacebookUiSearchFragment"
+        android:label="FacebookUiSearch"
+        tools:layout="@layout/fragment_facebook_ui_search" />
 </navigation>

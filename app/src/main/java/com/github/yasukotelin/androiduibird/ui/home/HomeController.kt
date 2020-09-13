@@ -1,18 +1,25 @@
 package com.github.yasukotelin.androiduibird.ui.home
 
-import com.airbnb.epoxy.EpoxyController
+import com.airbnb.epoxy.TypedEpoxyController
 import com.github.yasukotelin.androiduibird.homeUiGridList
 
-class HomeController : EpoxyController() {
+interface HomeControllerListener {
+    fun onClickContent(content: Content)
+}
 
-    var contents: List<Content>? = null
+class HomeController(
+    private val listener: HomeControllerListener,
+) : TypedEpoxyController<HomeViewData>() {
 
-    override fun buildModels() {
-        contents?.let { contents ->
-            contents.forEach {
-                homeUiGridList {
-                    id(modelCountBuiltSoFar)
-                    content(it)
+    override fun buildModels(homeViewData: HomeViewData?) {
+        homeViewData ?: return
+
+        homeViewData.contents.forEach {
+            homeUiGridList {
+                id(modelCountBuiltSoFar)
+                content(it)
+                onClick { model, _, _, _ ->
+                    listener.onClickContent(model.content())
                 }
             }
         }

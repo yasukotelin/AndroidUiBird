@@ -14,4 +14,17 @@
         <!-- ActionBar オプションメニューのOverflowアイコンの色 -->
         <item name="android:textColorSecondary">@android:color/white</item>
     </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.TopRadius" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">32dp</item>
+        <item name="cornerSizeTopLeft">32dp</item>
+        <item name="cornerSizeBottomRight">1dp</item>
+        <item name="cornerSizeBottomLeft">1dp</item>
+    </style>
 </resources>

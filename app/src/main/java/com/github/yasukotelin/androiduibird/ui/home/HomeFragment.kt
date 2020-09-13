@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.github.yasukotelin.androiduibird.databinding.FragmentHomeBinding
 
@@ -17,13 +18,15 @@ class HomeFragment : Fragment() {
 
     private val homeViewModel: HomeViewModel by viewModels()
     private lateinit var dataBinding: FragmentHomeBinding
-    private lateinit var homeController: HomeController
+
+    private val homeController: HomeController by lazy {
+        HomeController(homeViewModel)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        homeController = HomeController()
         dataBinding = FragmentHomeBinding.inflate(inflater, container, false).apply {
             this.lifecycleOwner = viewLifecycleOwner
             this.epoxyRecyclerView.apply {
@@ -39,11 +42,13 @@ class HomeFragment : Fragment() {
 
     private fun observeHomeViewModel() {
         homeViewModel.run {
-            this.contents.observe(viewLifecycleOwner, {
-                homeController.run {
-                    this.contents = it
-                    this.requestModelBuild()
-                }
+            this.homeViewData.observe(viewLifecycleOwner, {
+                homeController.setData(it)
+            })
+            this.navigateFacebookSearchUiAction.observe(viewLifecycleOwner, {
+                findNavController().navigate(
+                    HomeFragmentDirections.actionMainFragmentToFacebookUiSearchFragment()
+                )
             })
         }
     }

@@ -13,4 +13,7 @@
 
     <color name="bird_gray">#A09B9D</color>
     <color name="bird_gray2">#575757</color>
+    <color name="bird_gray3">#EEEEEE</color>
+
+    <color name="facebook_gray">#E0E0E9</color>
 </resources>
