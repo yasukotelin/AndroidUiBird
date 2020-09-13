@@ -22,5 +22,14 @@
         android:id="@+id/facebookUiSearchFragment"
         android:name="com.github.yasukotelin.androiduibird.ui.facebook_search_ui.FacebookUiSearchFragment"
         android:label="FacebookUiSearch"
-        tools:layout="@layout/fragment_facebook_ui_search" />
+        tools:layout="@layout/fragment_facebook_ui_search">
+        <action
+            android:id="@+id/action_facebookUiSearchFragment_to_facebookSearchInputFragment"
+            app:destination="@id/facebookSearchInputFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/facebookSearchInputFragment"
+        android:name="com.github.yasukotelin.androiduibird.ui.facebook_search_ui.FacebookSearchInputFragment"
+        android:label="FacebookSearchInputFragment"
+        tools:layout="@layout/fragment_facebook_search_input" />
 </navigation>
