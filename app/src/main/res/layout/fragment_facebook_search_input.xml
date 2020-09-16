@@ -51,7 +51,7 @@
                     android:layout_marginEnd="12dp"
                     android:background="@null"
                     android:focusable="true"
-                    android:hint="@string/search_in_facebook"
+                    android:hint="@string/search"
                     android:singleLine="true"
                     android:textCursorDrawable="@drawable/shape_black_cursor"
                     android:textSize="16sp"

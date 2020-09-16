@@ -12,5 +12,6 @@ data class Content(
 )
 
 enum class Destination {
-    FacebookSearchUi
+    FacebookSearchUi,
+    LikeImageAnimation,
 }

@@ -50,6 +50,11 @@ class HomeFragment : Fragment() {
                     HomeFragmentDirections.actionMainFragmentToFacebookUiSearchFragment()
                 )
             })
+            this.navigateLikeImageAnimationAction.observe(viewLifecycleOwner, {
+                findNavController().navigate(
+                    HomeFragmentDirections.actionMainFragmentToLikeImageAnimationFragment()
+                )
+            })
         }
     }
 }

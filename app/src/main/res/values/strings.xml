@@ -4,11 +4,17 @@
     <string name="toolbar_title_home">Home</string>
 
     <string name="account_name">アカウント名</string>
+    <string name="search">検索</string>
+    <string name="title">タイトル</string>
+    <string name="reference">[参考]</string>
     <string name="cancel">キャンセル</string>
 
     <string name="content_app_name_facebook">facebook</string>
     <string name="content_title_facebook_search_ui">SearchTextBox SharedElementTransition</string>
-    <string name="search_in_facebook">検索</string>
-    <string name="title">タイトル</string>
-    <string name="reference">[参考]</string>
+
+    <string name="content_app_name_line_manga">LINEマンガ</string>
+    <string name="content_title_like_image_animation">Like Image Animation</string>
+    <string name="home">ホーム</string>
+    <string name="like">お気に入り</string>
+    <string name="profile">プロフィール</string>
 </resources>
