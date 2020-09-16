@@ -7,6 +7,8 @@
     <string name="cancel">キャンセル</string>
 
     <string name="content_app_name_facebook">facebook</string>
-    <string name="content_title_facebook_search_ui">検索テキストボックスアニメーション</string>
-    <string name="search_in_facebook">Facebookを検索</string>
+    <string name="content_title_facebook_search_ui">SearchTextBox SharedElementTransition</string>
+    <string name="search_in_facebook">検索</string>
+    <string name="title">タイトル</string>
+    <string name="reference">[参考]</string>
 </resources>

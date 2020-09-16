@@ -57,10 +57,22 @@
                 tools:text="コンテンツタイトル" />
 
             <TextView
+                android:id="@+id/reference_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/reference"
+                android:textColor="@color/bird_gray2"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/content_title" />
+
+            <TextView
                 android:id="@+id/app_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="16dp"
@@ -68,7 +80,7 @@
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@id/reference_text"
                 app:layout_constraintTop_toBottomOf="@id/content_title"
                 app:textFromResourceId="@{content.appNameResId}"
                 tools:text="App name" />
