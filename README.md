@@ -8,12 +8,21 @@ This project is Android Native Ui examples.
 
 ### SeachTextBox SharedElementTransition
 
-<img src="./images/facebook_search_ui.gif" with width="320px" />
+<img src="./images/searchtextbox-sharedelement.gif" width="200px" />
 
 #### Description
 
 - Transition animation between start fragment and end fragment.
 - SharedElementTransition with Navigation Component
+
+### Like image animation
+
+<img src="./images/like-image-animation.gif" width="200px">
+
+#### Description
+
+- View animation.
+- Transit to bottom navigation.
 
 ## Author
 

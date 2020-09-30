@@ -14,13 +14,13 @@ class HomeViewModel : ViewModel(), HomeControllerListener {
                 Content(
                     R.string.content_title_facebook_search_ui,
                     R.string.content_app_name_facebook,
-                    R.raw.facebook_search_ui_gif,
+                    R.raw.searchtextbox_sharedelement,
                     Destination.FacebookSearchUi,
                 ),
                 Content(
                     R.string.content_title_like_image_animation,
                     R.string.content_app_name_line_manga,
-                    R.drawable.shape_loading_thumbnail,
+                    R.raw.like_image_animation,
                     Destination.LikeImageAnimation,
                 )
             )
