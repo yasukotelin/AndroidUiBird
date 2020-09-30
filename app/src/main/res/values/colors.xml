@@ -6,6 +6,7 @@
 
     <color name="bird_blue">#5890CC</color>
     <color name="bird_blue_dark">#3e719c</color>
+    <color name="bird_blue_light_background">#e3eefa</color>
 
     <color name="bird_yellow">#F8C62D</color>
 
